@@ -2,4 +2,5 @@
   <Folder Name="/src/">
     <Project Path="src/Thuxten.Logging/Thuxten.Logging.csproj" />
   </Folder>
+  <Folder Name="/test/" />
 </Solution>
