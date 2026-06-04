@@ -8,9 +8,9 @@ public sealed class MaskingLogger<T> : MsLogger.ILogger<T> where T : class
     private readonly MsLogger.ILogger<T> _inner;
     private readonly MaskingProcessor _processor;
 
-    internal MaskingLogger(MsLogger.ILogger<T> inner, MaskingProcessor processor)
+    public MaskingLogger(ILoggerFactory factory, MaskingProcessor processor)
     {
-        _inner = inner;
+        _inner = factory.CreateLogger<T>();
         _processor = processor;
     }
 

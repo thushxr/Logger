@@ -1,6 +1,6 @@
-﻿using System.Text.Json;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Text.Json;
 
 namespace Thuxten.Logging;
 
@@ -44,8 +44,16 @@ public static class LoggerExtension
             builder.SetMinimumLevel(options.MinimumLogLevel);
         });
 
-        services.AddSingleton(typeof(ILogger<>),
-            typeof(Logger<>));
+        if (options.MaskingRules.Count > 0)
+        {
+            var processor = new MaskingProcessor(options.MaskingRules);
+            services.AddSingleton(typeof(ILogger<>), typeof(MaskingLogger<>));
+            services.AddSingleton(processor);
+        }
+        else
+        {
+            services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
+        }
 
         return services;
     }
