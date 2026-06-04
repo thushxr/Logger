@@ -25,12 +25,8 @@ public class Logger<T> : ILogger<T> where T : class
         _logger.LogError(exception, message, args);
     }
 
-    public IDisposable BeginTraceScope(
-        string traceId,
-        string? requestId = null)
+    public IDisposable BeginTraceScope(string traceId)
     {
-        return _logger.BeginScope("TraceId: {TraceId}, RequestId: {RequestId}",
-            traceId,
-            requestId);
+        return _logger.BeginScope("TraceId: {TraceId}", traceId);
     }
 }

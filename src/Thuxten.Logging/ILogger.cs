@@ -8,7 +8,5 @@ public interface ILogger<T> where T : class
         string message,
         params object[] args);
 
-    IDisposable BeginTraceScope(
-        string traceId,
-        string? requestId = null);
+    IDisposable BeginTraceScope(string traceId);
 }
