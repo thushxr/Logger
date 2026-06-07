@@ -16,7 +16,7 @@ public sealed class Logger<T> : ILogger<T> where T : class
     public IDisposable BeginTraceScope(
         string traceId)
     {
-        return _logger.BeginScope("TraceId: {TraceId}", traceId);
+        return _logger?.BeginScope("TraceId: {TraceId}", traceId);
     }
 
     public void LogInformation(

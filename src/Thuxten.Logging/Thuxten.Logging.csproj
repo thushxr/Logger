@@ -1,14 +1,45 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
+        <TargetFrameworks>net8.0</TargetFrameworks>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.8" />
-      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.8" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" />
     </ItemGroup>
 
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<PackageId>Thuxten.Logging</PackageId>
+		<Version>8.0.0</Version>
+		<Authors>Thushar P</Authors>
+		<Company>Thuxten</Company>
+		<PackageProjectUrl>https://github.com/thuxten/Logger</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>
+			Structured logging library for .NET applications.
+		</Description>
+		
+		<PackageTags>
+			logging;structured-logging;console;dotnet;minimal;simple-logging
+		</PackageTags>
+
+		<RepositoryUrl>
+			https://github.com/thuxten/Logger
+		</RepositoryUrl>
+
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md"
+			  Pack="true"
+			  PackagePath="\" />
+	</ItemGroup>
 </Project>
