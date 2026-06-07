@@ -16,8 +16,8 @@
 		<PackageId>Thushar.Logging</PackageId>
 		<Version>8.0.0</Version>
 		<Authors>Thushar P</Authors>
-		<Company>Thuxten</Company>
-		<PackageProjectUrl>https://github.com/thuxten/Logger</PackageProjectUrl>
+		<Company>Thushar</Company>
+		<PackageProjectUrl>https://github.com/thushxr/Logger</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -30,7 +30,7 @@
 		</PackageTags>
 
 		<RepositoryUrl>
-			https://github.com/thuxten/Logger
+			https://github.com/thushxr/Logger
 		</RepositoryUrl>
 
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
