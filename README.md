@@ -1,4 +1,4 @@
-# Thuxten.Logging
+# Thushar.Logging
 
 A lightweight, structured, and developer-friendly logging library for .NET applications.
 
@@ -16,7 +16,7 @@ A lightweight, structured, and developer-friendly logging library for .NET appli
 Install the package from NuGet:
 
 ```bash
-dotnet add package Thuxten.Logging
+dotnet add package Thushar.Logging
 ```
 
 ## Quick Start
@@ -24,13 +24,13 @@ dotnet add package Thuxten.Logging
 ### Register Normal Logging
 
 ```csharp
-builder.Services.AddThuxtenLogging();
+builder.Services.AddLogger();
 ```
 
 ### Register Structured Logging
 
 ```csharp
-builder.Services.AddThuxtenLogging(options => 
+builder.Services.AddLogger(options => 
 { 
     options.UseStructuredLogging() 
 });
@@ -41,9 +41,9 @@ builder.Services.AddThuxtenLogging(options =>
 ```csharp
 public class OrderService
 {
-    private readonly IThuxtenLogger _logger;
+    private readonly ILogger _logger;
 
-    public OrderService(IThuxtenLogger logger)
+    public OrderService(ILogger logger)
     {
         _logger = logger;
     }
@@ -120,7 +120,7 @@ catch (Exception ex)
 
 ## Versioning
 
-Thuxten.Logging follows semantic versioning.
+Thushar.Logging follows semantic versioning.
 
 * Patch versions contain bug fixes.
 * Minor versions contain new features.
@@ -138,4 +138,4 @@ This project is licensed under the MIT License.
 
 In case of any doubt, feature request pin them on Github Issues:
 
-Instagram: [@thuxten](https://www.instagram.com/thuxten)
+Instagram: [@iam.thushar](https://www.instagram.com/iam.thushar)

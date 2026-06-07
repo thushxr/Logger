@@ -1,4 +1,4 @@
-﻿namespace Thuxten.Logging;
+﻿namespace Thushar.Logging;
 
 public interface ILogger<T> where T : class
 {

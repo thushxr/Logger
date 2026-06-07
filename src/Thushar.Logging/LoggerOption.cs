@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Thuxten.Logging;
+namespace Thushar.Logging;
 
 public class LoggerOption
 {

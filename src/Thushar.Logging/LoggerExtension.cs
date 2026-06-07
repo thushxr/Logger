@@ -2,11 +2,11 @@
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
-namespace Thuxten.Logging;
+namespace Thushar.Logging;
 
 public static class LoggerExtension
 {
-    public static IServiceCollection AddThuxtenLogging(
+    public static IServiceCollection AddLogger(
         this IServiceCollection services,
         Action<LoggerOption>? configure = null)
     {

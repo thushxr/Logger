@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using MsLogger = Microsoft.Extensions.Logging;
 
-namespace Thuxten.Logging;
+namespace Thushar.Logging;
 
 public sealed class Logger<T> : ILogger<T> where T : class
 {
