@@ -117,6 +117,8 @@ catch (Exception ex)
 | Version | Framework |
 | ------- | --------- |
 | 8.x.x   | .NET 8    |
+| 9.x.x   | .NET 9    |
+| 10.x.x   | .NET 10    |
 
 ## Versioning
 
