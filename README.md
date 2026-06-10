@@ -69,7 +69,7 @@ public void FunctionHandler(ILambdaContext context)
     using (Logger.BeginTraceScope(traceId))
     {
         Logger.LogInformation("Hello from Lambda! {data}", "some data");
-        Logger.LogError(new Exception("sfdasd"), "Hello from Lambda!");
+        Logger.LogError(new Exception("Some Exception"), "Hello from Lambda!");
     }
 }
 ```
@@ -118,6 +118,7 @@ catch (Exception ex)
 | ------- | --------- |
 | 8.x.x   | .NET 8    |
 | 9.x.x   | .NET 9    |
+| 10.x.x   | .NET 10    |
 
 ## Versioning
 
